@@ -2,7 +2,7 @@
 
 This module is useful to add permission to an ECR repository created via cross-region replication.
 
-Currently, the cross-region can replicate the images, but not the repository policy, this module uses Event Bridge to monitor the creation of a new ECR repository and uses a lambda to add a new policy to it.
+Currently, the cross-region can replicate the images, but not the [repository policy](https://github.com/aws/containers-roadmap/issues/1202), this module uses Event Bridge to monitor the creation of a new ECR repository and uses a lambda to add a new policy to it.
 
 This module will apply a policy that allows any account inside the AWS Organizations to access it.
 
