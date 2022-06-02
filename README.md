@@ -18,13 +18,7 @@ Add permission to allow any account inside an AWS Organization to get the image 
 - [AWS](https://registry.terraform.io/providers/hashicorp/aws/4.16.0)
 
 ### Terraform resources used:
-- [CloudWatch Metric Alarm](https://registry.terraform.io/providers/hashicorp/aws/3.74.0/docs/resources/cloudwatch_metric_alarm)
-- [Datadog monitor](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/resources/monitor)
-- [IAM policy](https://registry.terraform.io/providers/hashicorp/aws/3.74.0/docs/resources/iam_policy)
-- [Subscribing to SNS topics](https://registry.terraform.io/providers/hashicorp/aws/3.74.0/docs/resources/sns_topic_subscription)
-- [Policy for SQS Queue](https://registry.terraform.io/providers/hashicorp/aws/3.74.0/docs/resources/sqs_queue_policy)
-- [SQS Queue](https://registry.terraform.io/providers/hashicorp/aws/3.74.0/docs/resources/sqs_queue)
-
+- [IAM policy](https://registry.terraform.io/providers/hashicorp/aws/4.16.0/docs/resources/iam_policy)
 
 
 # Terraform Docs

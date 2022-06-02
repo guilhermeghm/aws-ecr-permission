@@ -25,17 +25,13 @@ def lambda_handler(event, context):
             {
                 "Sid":"ECR Org Access",
                 "Effect":"Allow",
-                "Principal":"*",
+                "Principal": {
+                    "AWS": "*"
+                },
                 "Action":[
-                    "ecr:GetAuthorizationToken",
                     "ecr:BatchCheckLayerAvailability",
-                    "ecr:GetDownloadUrlForLayer",
-                    "ecr:GetRepositoryPolicy",
-                    "ecr:DescribeRepositories",
-                    "ecr:ListImages",
-                    "ecr:DescribeImages",
                     "ecr:BatchGetImage",
-                    "ecr:DescribeImageScanFindings"
+                    "ecr:GetDownloadUrlForLayer",
                     ],
                 "Condition":{
                     "StringLike":{
