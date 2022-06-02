@@ -19,7 +19,7 @@ Add permission to allow any account inside an AWS Organization to get the image 
 
 ```terraform
 module "ecr_permission" {
-  source = "git::ssh://git@gitlab.com/guilhermeghm/aws-ecr-permission.git?ref=tags/TAG_REV"
+  source = "git::ssh://git@github.com/guilhermeghm/aws-ecr-permission.git?ref=tags/TAG_REV"
 
   org_id        = "o-x99999xxx"
 
