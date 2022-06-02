@@ -12,13 +12,24 @@ This module will apply a policy that allows any account inside the AWS Organizat
 
 Add permission to allow any account inside an AWS Organization to get the image from an ECR repository.
 
+
 <br />
 
-### Terraform providers used:
-- [AWS](https://registry.terraform.io/providers/hashicorp/aws/4.16.0)
+## How to use:
 
-### Terraform resources used:
-- [IAM policy](https://registry.terraform.io/providers/hashicorp/aws/4.16.0/docs/resources/iam_policy)
+```terraform
+module "ecr_permission" {
+  source = "git::ssh://git@gitlab.com/guilhermeghm/aws-ecr-permission.git?ref=tags/TAG_REV"
+
+  org_id        = "my_service"
+
+  tags = {
+    service     = "my_service"
+    environment = "development"
+    ...
+  }
+}
+```
 
 
 # Terraform Docs
