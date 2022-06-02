@@ -15,6 +15,7 @@ resource "aws_iam_policy" "lambda_trigger_ecr" {
   path        = "/"
   description = "IAM policy to allow Lambda to set ECR permissions."
   policy      = data.aws_iam_policy_document.lambda_trigger_ecr.json
+  tags        = var.tags
 }
 
 module "lambda_trigger_ecr" {

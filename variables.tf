@@ -1,5 +1,5 @@
 variable "org_id" {
-  description = "(Required) AWS Organizations ID which you want to allow access to the ECR repository. "
+  description = "(Required) AWS Organizations ID which you want to allow access to the ECR repository."
 }
 
 variable "tags" {
