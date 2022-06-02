@@ -35,7 +35,7 @@ Add permission to allow any account inside an AWS Organization to get the image 
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.9.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.16.0 |
 
 ## Modules
 
@@ -57,8 +57,8 @@ Add permission to allow any account inside an AWS Organization to get the image 
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_org_id"></a> [org\_id](#input\_org\_id) | n/a | `any` | n/a | yes |
-| <a name="input_tags"></a> [tags](#input\_tags) | n/a | `any` | `null` | no |
+| <a name="input_org_id"></a> [org\_id](#input\_org\_id) | (Required) AWS Organizations ID which you want to allow access to the ECR repository. | `any` | n/a | yes |
+| <a name="input_tags"></a> [tags](#input\_tags) | (Optional) A map of tags to populate on the created resources. If configured with a provider default\_tags configuration block present, tags with matching keys will overwrite those defined at the provider-level. | `map(string)` | `{}` | no |
 
 ## Outputs
 
