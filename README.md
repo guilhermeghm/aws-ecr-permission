@@ -21,7 +21,7 @@ Add permission to allow any account inside an AWS Organization to get the image 
 module "ecr_permission" {
   source = "git::ssh://git@gitlab.com/guilhermeghm/aws-ecr-permission.git?ref=tags/TAG_REV"
 
-  org_id        = "my_service"
+  org_id        = "o-x99999xxx"
 
   tags = {
     service     = "my_service"
